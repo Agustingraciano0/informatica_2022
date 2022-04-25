@@ -163,4 +163,4 @@ def validar_mail(mail):
     valido = bool(re.match(r"(\S+)@(\w+)\.(\w)", mail))
     print (valido)
 
-validar_mail("santiagodominguez@gmail.com" )
+validar_mail("agustingraciano8@gmail.com" )

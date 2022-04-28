@@ -1,4 +1,5 @@
 #Ejercicio 1
+#Creá un programa que lea una cadena por teclado y compruebe si la primer letra es mayúscula o minúscula.
 def mayuscula_o_minuscula(palabra):
     if palabra[0] == str.upper(palabra[0]):
         return "Mayuscula"
@@ -9,6 +10,8 @@ print(mayuscula_o_minuscula("messi"))
 
 
 #Ejercicio 2
+#Escribí un programa que pida un número y diga si es positivo, negativo o 0 y además informe si es par o impar (el 0 es un número par).
+
 def positivo_negativo(numero):
     resultado = ""
     if numero < 0:
@@ -28,6 +31,8 @@ print(positivo_negativo(4))
 
 
 #Ejercicio 3
+#Escribí un programa que dado un número del 1 al 6, ingresado por teclado, muestre cuál es el número que está en la cara opuesta de un dado.
+#Si el número es menor a 1 y mayor a 6 se debe mostrar un mensaje indicando que es incorrecto el número ingresado.
 def numero_opuesto(numero):
     if 1 <= numero <= 6:
         return 7 - numero
@@ -55,6 +60,8 @@ print(cobro_paquete("Asia", 4))
 
 
 #Ejercicio 5
+#Creá un programa que pida el número de día de la semana (del 1 al 7) e imprima el nombre correspondiente. 
+# Si se ingresa un número fuera de rango tiene que imprimir un mensaje indicando que el número es incorrecto.
 def dia_semana(numero):
     if numero == 1:
         print("Lunes")
@@ -77,22 +84,77 @@ dia_semana(20)
 
 
 #Ejercicio 6
-lista1 = "messi"
+#Creá una lista e inicializala con 5 cadenas de caracteres leídas por teclado. 
+# Copiá los elementos de la lista en otra lista pero en orden inverso, imprimí los elementos de esta última lista.
+lista1 = ["messi"]
 lista2 = list(reversed(lista1))
 print(lista2)
 
 
 #Ejercicio 7
+#Creá un programa que declare una lista y la vaya llenando de números leídos por teclado hasta que se introduzca un número negativo. 
+# Una vez hecho esto se deben imprimir los elementos de la lista
+
+lista_numero = []
+numero = int(input("dame un numero"))
+
+while numero >= 0:
+    lista_numero.append(numero)
+    numero = int(input("dame un numero"))
+    if numero < 0:
+        print (lista_numero)
+
+#otra forma
+lista7=[]
+def agregar_num(num):
+  if num > 0:
+    return list.append(lista7,num)
+  else:
+    print(lista7)
+
+
 
 
 #Ejercicio 8
+#Realizá un programa que declare tres listas lista1, lista2 y lista3, donde las dos primeras listas deben tener cinco enteros cada una
+#por teclado y asigne para cada elemento de la lista3 la suma de los elementos de la lista1 y la lista2 
+# (es decir, el primer elemento de la lista3 tiene que ser la suma del primer elemento de la lista1 y el primero de la lista2)
+
 def suma_de_listas(lista11, lista22):
     lista33 = [lista11[0] + lista22[0], lista11[1] + lista22[1], lista11[2] + lista22[2], lista11[3] + lista22[3], lista11[4] + lista22[4]]
     return lista33
 print(suma_de_listas([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]))
 
 
+#Ejercicio 9 
+#Hacé un programa que guarde los nombres y la edades de los alumnos de un curso. Se debe introducir el nombre y la edad de cada alumno por teclado.
+#El proceso de lectura de datos terminará cuando se introduzca como nombre un asterisco (*). Al finalizar se deben mostrar los siguientes datos:
+#La edad máxima de todos los alumnos.
+#Los alumnos que tengan la edad máxima
+
+listanombres=[]
+listaedades = []
+
+while True:
+    nombre = input ("Nombre: ")
+    if nombre != "*":
+        listanombres.append(nombre)
+        listaedades.append(int(input("Edad: ")))
+    if nombre == "*": break; 
+
+edad_max_alumnos = max (listaedades)
+
+for nombre, edad in zip(listanombres, listaedades):
+    if edad == edad_max_alumnos:
+        print ("Almuno en edad maxima:", (nombre))
+
+print ("Edad maxima es", (edad_max_alumnos))
+
+
 #Ejercicio 10
+#Escribí un programa que lea una cadena y devuelva un diccionario con la cantidad de apariciones de cada carácter en la cadena 
+#considerar que las mayúsculas difieren de las minúsculas, por lo que, si el string es "Agua", el carácter "A" tiene 1 aparición y el carácter "a" también tiene 1).
+
 def letra(string):
     diccionario = {}
     for letra in string:
@@ -105,6 +167,8 @@ print(letra("bebet benedetto"))
 
 
 #Ejercicio 11
+#Modificá el programa anterior para que además imprima los caracteres que no aparecen en la cadena, pero con el valor 0
+
 alfabeto = "abcdefghijklmnñopqrstuvwxyz"
 diccionario = {}
 for letra in alfabeto + alfabeto.upper():
@@ -120,9 +184,20 @@ print(letra2("lionel andres messi"))
 
 
 #Ejercicio 12
+#Creá un programa que permita guardar los nombres de los alumnos de una clase y las notas que han obtenido. Cada alumno puede tener distinta cantidad de notas
+#Guardá la información en un diccionario cuya claves serán los nombres de los alumnos y los valores serán listas con las notas de cada alumno
+#El programa tiene que pedir el número de alumnos que se va a introducir, luego su nombre y sus notas hasta que introduzcamos un número negativo
+# Al final el programa tiene que mostrar la lista de alumnos y la nota media obtenida por cada uno de ellos. 
+# Nota: si se introduce el nombre de un alumno que ya existe el programa tiene que dar un error.
+
+
+
+
+
 
 
 #Ejercicio 13
+#Creá un programa que pida dos número enteros al usuario y diga si alguno de ellos es múltiplo del otro creando la función esMultiplo.
 def esMultiplo(numero1, numero2):
     return numero1 % numero2 == 0 or numero2 % numero1 == 0
 print(esMultiplo(2, 4))

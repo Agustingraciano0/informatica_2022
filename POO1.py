@@ -120,6 +120,7 @@ class Calculadora:
     def valorActual(self):
         return self.valor
 
+
 #Ejercicio 7
 #Definí una clase de gorriones, de los cuales nos interesa conocer dos medidas conocidas como CSS 
 # (coeficiente de serenidad silenciosa), CSSP y CSSV (como el CSS pero “pico” y “veces”)

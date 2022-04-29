@@ -52,6 +52,7 @@ def susti(archivo1, archivo2):
                 a.write (letra.replace(letra, letra + "\n"))
 
 #Ejercicio 7
+#Escribí un porgrama que lea un archivo e identifique la palabra más larga, la cual debe imprimir y decir cuantos caracteres tiene.
 def palabra_larga(archivo):
     caracteres = 0
     palabra =""
@@ -66,6 +67,8 @@ def palabra_larga(archivo):
 print (palabra_larga("bio.txt"))
 
 #Ejercicio 9
+#Realizá un programa que lea un archivo y obtenga la frecuencia de cada palabra que hay en el archivo.
+#Recordá que la frecuencia es la relación entre número de veces que aparece la palabra en cuestión con respecto a la cantidad total de palabras.
 def world_counter(archivo):
     frecuencias = {}
     with open (archivo, "r") as arc:
@@ -81,6 +84,7 @@ def world_counter(archivo):
 print(world_counter("messi.txt"))
 
 #Ejercicio 10
+#Escribí un programa que añada a un archivo dado todos los archivos de texto (.txt) que hayan en una determinada carpeta.
 import glob
 import os 
 def funcion1 (archivo, ruta):

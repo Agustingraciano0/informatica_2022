@@ -1,0 +1,23 @@
+import os
+>>> os.getcwd()
+'C:\\Users\\melga\\OneDrive\\Documents\\GitHub'
+>>> ls                  
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'ls' is not defined. Did you mean: 'os'?
+>>> os.getcwd
+<built-in function getcwd>
+>>> os.getcwd()
+'C:\\Users\\melga\\OneDrive\\Documents\\GitHub'
+>>> path=os.getcwd()
+>>> path
+'C:\\Users\\melga\\OneDrive\\Documents\\GitHub'
+>>> path=path + "\\ datos_cucu.txt"
+>>> path
+'C:\\Users\\melga\\OneDrive\\Documents\\GitHub\\ datos_cucu.txt'
+>>> with open(path, "w") as datos_cucu:
+...     datos_cucu.write("cucu melga 19")
+... 
+13
+>>> os.listdir()
+[' datos_cucu.txt', 'Fundamentos-info', 'Fundamentos_de_informatica']

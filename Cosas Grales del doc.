@@ -21,3 +21,65 @@ re.match → te busca el patron en solo la primer palabra
 re.search → te busca el patron en todo el texto (solo 1)
 re.findall → te busca el patron en todo el texto (todos)
 re.sub → te lo busca el patron en todo el texto y te lo reemplaza
+
+
+except: saca cualquier tipo de error y te permite seguir trabajando sin que se rompa el script.
+raise: levanta el error
+ej)  if a==0
+	raise TypEerror (“a debe ser ¡= 0)
+
+Metacaracteres → caracteres especiales que me determinan un tipo específico de formato de texto. 
+\n → salto de línea → enter
+\t → Tab o cambio de pestaña
+\s → espacio
+ ' → comillas simples
+" → comillas dobles
+^ → inicio de línea 
+$ —> fin de línea
+\A → inicio de texto
+\Z → fin de texto
+\W → letras/ alfanumerico
+\D → no  número
+\d → número
+
+Expresión regular→ es la forma en la que puedo presentar un string/ un conjunto de metacaracteres → RE (regular expressions) → re.script.py
+
+PARA SALTO DE PÁGINA(\N)
+
+
+
+En python todo son objetos, en programación orientada a objetos vamos a crear entidades computacional 
+OBJETO:
+Un objeto es un pedazo de código que le mando mensajes y hace algo en consecuencia. Un ente que entiende mensajes y tiene atributos
+Tiene un estado, que es un conjunto de atributos y es estático. 
+
+Tiene un estado dinámico interno de los objetos que contemplan los valores. Tiene una instancia de una clase, es la creación concreta de una cosa abstracta. 
+Clase → la abstracción o la descripción general de los objetos.
+tienen una identidad→ son únicos
+interfaz→ los mensajes que pueden entender → polimorfismo (tiene que existir un tercer objeto)
+subclases → mamushka → clase que engloba otras clases → clase madre, le hereda cosas a las clases hijas. Clases hijas→ heredan de clases madres → herencia hay muchos objetos que se comunican entre sí 
+
+
+
+
+none→ Nada 
+#cuando los objetos hacen o pueden hacer algo en ppio no tienen porqué responder nada 
+#cuando el objeto conoce la operación que le pedimos no tira error 
+→ atributos son cosas que saben hacer los objetos 
+→ ¿cómo le mandamos mensajes a los objetos? punto y nombre del mensaje que queramos pasar .mensaje()
+→ Un mensaje es un método, un método es ……
+→golondrina es una clase, nos da una idea de los que puede hacer objetos de esa clase 
+
+
+Rango → Es una manera abreviada de escribir una serie de caracteres los cuales van formar parte de nuestra expresión regular para buscarlos o ignorarlos
+
+
+
+
+Expresiones regulares→ son cadenas de caracteres basadas en reglas sintácticas, que permiten describir secuencias de caracteres. Es decir es un criterio para buscar, capturar o reemplazar texto utilizando patrones. Estas son una herramienta poderosa a la hora de hacer búsquedas sofisticadas en Strings de forma simple. Permite repetir cierta cantidad de veces una búsqueda dada. IMPORT RE → biblioteca de expresiones regulares
+
+
+Metacaracteres → tienen un significado especial para las expresiones regulares.
+metacaracteres delimitadores →delimitar dónde queremos buscar los patrones de búsqueda
+
+

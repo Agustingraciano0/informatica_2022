@@ -2,9 +2,12 @@
 def no_p (archivo, letra):
     suma = 0
     with open(archivo, "r") as f:
-        for linea in f.read().split("\n"):
+        for linea in f
             if linea[0] != letra:
                 suma += 1
+            else:
+                return suma
+
 print (no_p)
 
 print (no_p("bio.txt", "m"))

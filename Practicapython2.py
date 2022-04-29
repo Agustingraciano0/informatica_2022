@@ -144,11 +144,11 @@ while True:
 
 edad_max_alumnos = max (listaedades)
 
-for nombre, edad in zip(listanombres, listaedades):
-    if edad == edad_max_alumnos:
-        print ("Almuno en edad maxima:", (nombre))
+    for nombre, edad in zip(listanombres, listaedades):
+        if edad == edad_max_alumnos:
+            print ("Almuno en edad maxima:", (nombre))
 
-print ("Edad maxima es", (edad_max_alumnos))
+ print ("Edad maxima es", (edad_max_alumnos))
 
 
 #Ejercicio 10
@@ -202,6 +202,11 @@ def esMultiplo(numero1, numero2):
     return numero1 % numero2 == 0 or numero2 % numero1 == 0
 print(esMultiplo(2, 4))
 
+
+#Ejercicio 14
+#Creá una función que calcule la temperatura media de un día a partir de la temperatura máxima y mínima. 
+# Escribí un programa principal, que utilizando la función anterior, vaya pidiendo la temperatura máxima y mínima de cada día y vaya mostrando la media.
+#El programa tiene que pedir el número de días que se van a introducir.
 def temperatura_media(max, min):
     return (max + min) / 2
 print(temperatura_media(20, 4))
@@ -209,6 +214,19 @@ print(temperatura_media(20, 4))
 
 
 #Ejercicio 15
+#Creá un programa para gestionar datos de los socios de un club, el cual permita:
+#Cargar la información de los socios en un diccionario para acceder por número de socio. Los datos que se deben almacenar son: número, nombre y apellido, fecha de ingreso (ddmmaaaa), cuota al dia (s/n) (el programa tiene que dejar de cargar cuando se ingrese el número 0). 
+#El programa debe iniciar con los datos de los socios fundadores ya cargados, los cuales son:
+#Socio número 1, Florencia Ocampo, ingresó el 14/09/2001, cuota al día
+#Socio número 2, David Estévez, ingresó el 14/09/2001, cuota al día
+#Socio número 3, Sofía Cáceres, ingresó el 14/09/2001, cuota al día
+
+#Informar la cantidad de socios que tiene el club.
+#Solicitar al usuario el número de un socio y registrar que ha pagado todas las cuotas.
+#Modificar la fecha de ingreso de todos los socios ingresados el 21/10/2017, indicando que en realidad ingresaron el 22/10/2017.
+#Solicitar el nombre y apellido d eun socio y darlo de baja (eliminarlo del listado).
+#Imprimir el listado de socios completos.
+
 def cargarSocios(socios):
     numero = int(input("Número de socio: "))
     while numero != 0:

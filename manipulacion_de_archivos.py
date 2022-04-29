@@ -1,4 +1,5 @@
 #Ejercicio 1
+#Realizá un programa que lea un archivo e imprima cuántas líneas de ese archivo no empiezan con una determinada letra (por ejemplo que imprima cuántas líneas no empiezan con "P")
 def no_p (archivo, letra):
     suma = 0
     with open(archivo, "r") as f:
@@ -13,6 +14,7 @@ print (no_p)
 print (no_p("bio.txt", "m"))
 
 #Ejercicio 2
+#Escribí un programa que lea un archivo e imprima las primeras n líneas.
 def imprimir (archivo, lineas):
     contador = lineas - 1
     with open (archivo, "r") as f:
@@ -22,6 +24,7 @@ def imprimir (archivo, lineas):
 print(imprimir("bio.txt",1))
 
 #Ejercicio 3
+#Escribí un programa que lea un archivo, guarde las líneas del archivo en una lista y luego imprima las n últimas.
 def guardar (archivo, lineas):
     lista =[]
     with open (archivo, "r") as f:
@@ -32,6 +35,7 @@ def guardar (archivo, lineas):
 print (guardar ("bio.txt",3))
 
 #Ejercicio 4
+#Hacé un programa que lea un archivo, cuente la cantidad de palabras del archivo y luego imprima el resultado.
 def contar (archivo):
     with open (archivo, "r") as f:
         lista_palabras = f.read().split()
@@ -40,6 +44,7 @@ def contar (archivo):
 print (contar("bio.txt"))
 
 #Ejercicio 5
+#Escribí un programa que lea un archivo, reemplace una letra por esa misma letra más un salto de línea y lo guarde en otro archivo.
 def susti(archivo1, archivo2):
     with open(archivo1, "r") as f, open (archivo2, "w") as a:
         for palabra in f.read():

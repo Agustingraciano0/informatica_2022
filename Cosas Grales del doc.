@@ -1,0 +1,23 @@
+ctrl J → terminal
+apretar git bash (flechita al lado del +) → me lo tengo que bajar
+ls → lista de archivos
+pwd → carpeta donde estoy / working dir
+cd  → change directory / cambiar dir
+nube → internet
+local → mi computadora
+directory → code → download ZIP
+r → read
+w → write → escribe/ sobreescribe/ genera el archivo y escribe
+a → append → agrega líneas nuevas/ genera el archivo y escribe
+open ()
+biblioteca→ OS / glob
+path → dirección a mi archivo (en la carpeta)
+Os.getcwd () → devuelve un string con el path en que estoy
+os.mkdir → crea una carpeta
+txt→ archivo de texto 
+try→ intenta hacer esto si no podes dice except 
+tab → autocompleta
+re.match → te busca el patron en solo la primer palabra
+re.search → te busca el patron en todo el texto (solo 1)
+re.findall → te busca el patron en todo el texto (todos)
+re.sub → te lo busca el patron en todo el texto y te lo reemplaza

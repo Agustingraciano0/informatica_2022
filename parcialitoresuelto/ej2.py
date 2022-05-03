@@ -37,8 +37,8 @@ class Auto():
         self.cambio = None
     
     def arrancar (self):
-        if self.cambio < 5:
-            self.cambio -= 1
+        self.cambio = 1
+        self.rpm = 500
     
     def subirCambio (self):
         if self.cambio < 5:

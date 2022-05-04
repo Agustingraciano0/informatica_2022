@@ -1,4 +1,4 @@
-Ejercicio 1 
+#Ejercicio 1 
 """
 Estados: alimento y caricias
 Interfaz Perro: energia, comer, acariciar, esta debil, pasear

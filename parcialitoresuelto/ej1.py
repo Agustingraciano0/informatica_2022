@@ -17,3 +17,4 @@ def sin_c (string):
 print(sin_c("ttaatatggttaacatgg"))
 print(cuantas_veces("xsabc9cabcb3sabc9 "))
 
+

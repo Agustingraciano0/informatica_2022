@@ -1,3 +1,7 @@
++= le suma a la variable 
+== retorna un booleano
++ solo suma 
+
 ctrl J → terminal
 apretar git bash (flechita al lado del +) → me lo tengo que bajar
 ls → lista de archivos

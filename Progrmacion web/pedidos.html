@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilopedidos.css">
+    <title>Formulario de pedidos</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Tu pedido</h1>
+    </div>
+    
+    <br>
+
+    <div align="center" id="main">
+
+        <form method="get" action="./index.html">
+            <div>
+                <label for="">Nombre Completo:</label>
+                <input type="text" name="nombre Completo" placeholder="Aqui el nombre completo"> <br> <br>            
+            </div>
+            <div>
+                <label for="">Empresa:</label>
+                <input type="text" name="Empresa" placeholder="Ingresar nombre de la Empresa"> <br> <br>
+            </div>
+            <div>
+                <label for="">Direccion:</label>
+                <input type="text" name="Direccion" placeholder="Ingresar direccion a donde Enviar"> <br> <br>
+            </div>
+            <div>
+                <label for="">Elegir variedad de Cafe:</label>
+                <select name="Variedad de cafe" id="">
+                    <option value="Cafe expreso">Cafe Expreso</option>
+                    <option value="Cafe Doble" selected>Cafe Doble</option>
+                    <option value="Cafe Flash">Cafe Flash</option>
+                    <option value="Cafe Mocha">Cafe Mocha</option>
+                    <option value="Capuccino">Capuccino</option>
+                </select> <br> <br>
+            </div>
+            <div>
+                <label for="">Cantidad:</label>
+                <input type="number" name="CantCafe" placeholder="Ingrese la cantidad"><br> <br>
+            </div>
+            <div>
+                <label for="">Cupon de beneficio</label>
+                <input type="checkbox" name="Cupon"><br> 
+            </div>
+            <div>
+                <p>¡Disfruta de nuestra variedad de snacks!</p>
+                <label> Tipo de snack</label>
+                <select name="Variedad DE snack" id="">
+                    <option value="Brownie de chocolate">Brownie de chocolate</option>
+                    <option value="Alfajor de dulce de leche" selected>Alfajor de dulce de leche</option>
+                    <option value="Scon de Queso">Scon de queso</option>
+                    <option value="Coquito">Coquito</option>
+                    <option value="Cookie de vainilla">Cookie de vainilla</option>
+                    <option value="Cookie de chocolate">Cookie de chocolate</option>
+                </select> 
+                <label for="">Cantidad:</label>
+                <input type="number" name="CantCafe" placeholder="Ingrese la cantidad"><br> <br>
+            </div>
+
+            <input type="submit" name="Pedido" value="Pedir!">
+           
+        </form>
+
+
+    </div>
+</body>
+</html>
